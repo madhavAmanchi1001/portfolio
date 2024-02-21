@@ -5,10 +5,8 @@ contactNav.addEventListener("click", function () {
   contactInfo.classList.toggle("hidden");
   if (contactNav.innerHTML === "Contact") {
     contactNav.innerHTML = `<button class="close-about-modal-2">&times;</button>`;
-    // contactNav.style.color = "red";
   } else {
     contactNav.innerHTML = "Contact";
-    // contactNav.style.color = "white";
   }
 });
 

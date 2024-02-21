@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+  /* font-family: "Cinzel", serif; */
+  /* font-family: "Italiana", sans-serif; */
+  font-family: "Eagle Lake", serif;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 80px;
+  box-shadow: 6px 2px 30px rgba(124, 252, 0, 0.6);
+}
+.nav--left {
+  margin: 20px;
+}
+.nav--right {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  height: 80px;
+}
+.nav--link {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+  background-color: black;
+  font-family: "Eagle Lake", serif;
+  border: none;
+  font-size: 16px;
+}
+.nav--link:hover {
+  color: rgba(124, 252, 0, 0.6);
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.main--left {
+  width: 50vw;
+  text-align: right;
+  padding-left: 200px;
+}
+.main--left > h1 {
+  font-size: 2.5em;
+  text-shadow: 5px 5px 10px rgba(124, 252, 0, 0.6);
+}
+.main--right {
+  width: 50vw;
+  padding-left: 100px;
+}
+.my--image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px rgba(124, 252, 0, 0.6);
+  /* border: 5px rgba(101, 203, 0, 0.6) solid; */
+}
+.skills {
+  padding: 10px;
+  text-align: center;
+}
+.skills-heading {
+  letter-spacing: 2px;
+  font-size: 35px;
+  text-shadow: 5px 5px 10px rgba(124, 252, 0, 0.6);
+}
+
+.skills-sub-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.skills-card {
+  flex: 1 0 calc(100% / 4);
+  border: 2px rgba(0, 0, 0, 1) solid;
+  margin: 20px;
+  padding: 22px;
+  width: 300px;
+  border-radius: 20px;
+}
+.skills-card:hover {
+  box-shadow: 0px 0px 30px rgba(124, 252, 0, 0.6);
+}
+svg#bootstrap {
+  scale: 0.92;
+  position: relative;
+  bottom: 10px;
+}
+svg#bootstrap + .sc-p {
+  position: relative;
+  bottom: 10px;
+}
+
+.sc-h1 {
+  font-size: 25px;
+}
+.sc-p {
+  font-size: 18px;
+}
+svg#html5 {
+  scale: 1.25;
+  position: relative;
+  bottom: 10px;
+}
+/* CONTACT CARD CSS */
+ul {
+  display: flex;
+  position: absolute;
+  top: 12%;
+  right: 0%;
+  /* transform: translate(-50%, -50%); */
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:before {
+  /* background: #55acee; */
+  background: #bc2a8d;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+  background: #5a32a3;
+}
+/* ABOUT MODAL CSS */
+.about-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 6rem;
+  border-radius: 60px;
+  box-shadow: 0px 0px 100px rgba(124, 252, 0, 0.3);
+  z-index: 10;
+}
+.close-about-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.close-about-modal-2 {
+  position: absolute;
+  top: 0.8rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

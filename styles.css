@@ -207,10 +207,10 @@ ul li:nth-child(4) a:before {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 6rem;
   border-radius: 60px;
-  box-shadow: 0px 0px 100px rgba(124, 252, 0, 0.3);
+  box-shadow: 0px 0px 50px rgba(124, 252, 0, 0.3);
   z-index: 10;
 }
 .close-about-modal {

@@ -6,6 +6,9 @@ const overlay = document.querySelector(".overlay");
 const closeModal = document.querySelector(".close-about-modal");
 const aboutBtn = document.querySelector(".link-about");
 const locationBtn = document.querySelector(".location-svg-button");
+const skillsContainer = document.querySelector(".skills-sub-cont");
+const prevButton = document.querySelector(".prev-button");
+const nextButton = document.querySelector(".next-button");
 
 // declared functions
 const closeAboutFn = function () {
@@ -18,6 +21,7 @@ const openAboutFn = function () {
 };
 
 //Event Listeners
+//{contact button toggling between close and X}
 contactNav.addEventListener("click", function () {
   contactInfo.classList.toggle("hidden");
   if (contactNav.innerHTML === "Contact") {
@@ -26,7 +30,7 @@ contactNav.addEventListener("click", function () {
     contactNav.innerHTML = "Contact";
   }
 });
-
+//{X close button closing the modal}
 aboutBtn.addEventListener("click", openAboutFn);
 closeModal.addEventListener("click", closeAboutFn);
 overlay.addEventListener("click", closeAboutFn);
@@ -35,16 +39,13 @@ document.addEventListener("keydown", function (e) {
     closeAboutFn();
   }
 });
-
+//{pointing to my house location in a new tab using window.open(, "blank")}
 locationBtn.addEventListener("click", function () {
   const url =
     "https://www.google.com/maps/dir/14.6999133,77.5831264/14.69982,77.5832465/@14.6998304,77.583225,16z/data=!4m4!4m3!1m1!4e1!1m0?entry=ttu";
   window.open(url, "blank");
 });
-
-const skillsContainer = document.querySelector(".skills-sub-cont");
-const prevButton = document.querySelector(".prev-button");
-const nextButton = document.querySelector(".next-button");
+////{< > buttons functionality to scroll}
 const cardWidth = 500; // Adjust this value according to your skill card width
 const visibleCards = 3; // Number of cards visible at a time
 let currentPosition = 0;

@@ -232,6 +232,9 @@ ul li:nth-child(4) a:before {
   border: none;
   background: none;
 }
+.close-about-modal:hover {
+  color: rgba(124, 252, 0, 0.6);
+}
 .close-about-modal-2 {
   position: absolute;
   top: 0.8rem;
@@ -241,6 +244,9 @@ ul li:nth-child(4) a:before {
   cursor: pointer;
   border: none;
   background: none;
+}
+.close-about-modal-2:hover {
+  color: rgba(124, 252, 0, 0.6);
 }
 .image-and-location {
   display: flex;
